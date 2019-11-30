@@ -60,7 +60,6 @@ if(isset($_POST['submit'])){
 ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,7 +74,9 @@ if(isset($_POST['submit'])){
 
 <body>
     <div style="margin-left: 15px;">
-    <div><h1>Huella Base de Datos</h1></div>
+        <div>
+            <h1>Huella Base de Datos</h1>
+        </div>
         <div>
             <br>
             <span>
@@ -92,7 +93,6 @@ if(isset($_POST['submit'])){
             </form>
         </div>
         <div>
-
             <br>
             <br>
             <div>
@@ -127,7 +127,6 @@ if(isset($_POST['submit'])){
                     <button type="submit" name="submit" value="Comparar">Comparar</button>
                 </form>
                 <br><br>
-
                 <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                     <input type="hidden" id="host" name="host" value="<?php  echo $host; ?>">
                     <input type="hidden" id="port" name="port" value="<?php  echo $port; ?>">
